@@ -1,0 +1,102 @@
+/* General Styles */
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+body {
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+/* Turn Container */
+.turn-container {
+    width: 200px; /* Adjusted width */
+    margin: 20px auto; /* Centering and spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.turn-container h3 {
+    margin: 0;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px; /* Added margin for spacing */
+    cursor: pointer;
+}
+
+/* Highlighting the active turn box */
+.turn-container .turn-box.active {
+    background-color: #FF2E63; /* Highlight color */
+    color: black; /* Text color to ensure visibility */
+}
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #000;
+}
+
+.box-align {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    display: flex; /* Added for centering text */
+    align-items: center;
+    justify-content: center;
+}
+
+.box-align:hover {
+    background-color: #FF2E63;
+}
+
+/* Play Again Button */
+#play-again {
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensure it's visible */
+    margin: 20px auto; /* Center and add margin */
+}
+
+#play-again:hover {
+    padding: 10px 30px; /* Adjusted padding */
+    background-color: #08D0D6;
+    color: #000;
+}
+
+/* Background Element (if used) */
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF2E63;
+    z-index: -1;
+}
